@@ -1,2 +1,2 @@
-coverage==7.2.3
-unittest-xml-reporting==3.2.0
+coverage
+unittest-xml-reporting
