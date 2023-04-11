@@ -2,6 +2,11 @@
 
 This repository demonstrates a Python project with a CI/CD pipeline using Jenkins. The pipeline includes creating a virtual environment, installing dependencies, running tests with coverage, and generating test and coverage reports.
 
+## Final output screenshot
+
+![Jenkins Pipeline Results](https://github.com/cvamsikrishna11/python-cicd-repo/blob/main/result.png)
+
+
 ## Prerequisites
 
 1. Jenkins installed on your system or server. (You can utilize this EC2 userdata to setup the jenkins and python https://github.com/cvamsikrishna11/devops-fully-automated/blob/installations/jenkins-maven-ansible-setup.sh)
