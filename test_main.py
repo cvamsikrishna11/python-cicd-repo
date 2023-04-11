@@ -15,7 +15,7 @@ class TestMainFunctions(unittest.TestCase):
         self.assertTrue(is_even(0))
 
 if __name__ == '__main__':
-    with open('test-results.xml', 'wb') as output:
+    with open('/var/lib/jenkins/workspace/python-cicd-pipeline/test-results.xml', 'wb') as output:
         unittest.main(
             testRunner=xmlrunner.XMLTestRunner(output=output),
             failfast=False, buffer=False, catchbreak=False
