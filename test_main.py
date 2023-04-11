@@ -1,4 +1,5 @@
 import unittest
+import xmlrunner
 from main import add, is_even
 
 class TestMainFunctions(unittest.TestCase):
@@ -14,4 +15,8 @@ class TestMainFunctions(unittest.TestCase):
         self.assertTrue(is_even(0))
 
 if __name__ == '__main__':
-    unittest.main()
+    with open('test-results.xml', 'wb') as output:
+        unittest.main(
+            testRunner=xmlrunner.XMLTestRunner(output=output),
+            failfast=False, buffer=False, catchbreak=False
+        )
